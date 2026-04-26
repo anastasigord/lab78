@@ -1,0 +1,181 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+  background-color: #f4f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dbe4f0;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.fieldLabel {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid #c5d1e0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.btn {
+  border: 1px solid #8da2ba;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.btnPrimary {
+  margin-top: 20px;
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #ffffff;
+}
+
+.btnDanger {
+  background: #be123c;
+  border-color: #be123c;
+  color: #ffffff;
+  margin-top: 20px;
+  
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #dbe4f0;
+  border-radius: 14px;
+}
+
+.inventoryTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.inventoryTable th,
+.inventoryTable td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #e8eef6;
+  vertical-align: top;
+}
+
+.thumb {
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #dbe4f0;
+}
+
+.detailsDescription {
+  color: #334155;
+  line-height: 1.5;
+}
+
+.detailsImage {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #dbe4f0;
+}
+
+.imagePlaceholder {
+  border: 1px dashed #b9c7d8;
+  border-radius: 12px;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.state {
+  margin: 12px 0;
+}
+
+.errorText {
+  color: #be123c;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modalCard {
+  width: min(420px, 100%);
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #dbe4f0;
+  padding: 16px;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 16px 12px 32px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
